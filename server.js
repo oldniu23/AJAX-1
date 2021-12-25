@@ -75,13 +75,11 @@ var server = http.createServer(function(request, response){
     response.statusCode = 200
     response.hasHeader('Content-Type', 'application/json;charset=utf-8')
     response.write(fs.readFileSync('db/page2.json'))
-    // 把5.json转成字符串并读取
     response.end()
   }else if(path === '/page3'){
     response.statusCode = 200
     response.hasHeader('Content-Type', 'application/json;charset=utf-8')
     response.write(fs.readFileSync('db/page3.json'))
-    // 把5.json转成字符串并读取
     response.end()
   }
   else {
